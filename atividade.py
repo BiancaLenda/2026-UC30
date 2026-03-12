@@ -1,17 +1,15 @@
-paciente = {}
+nome = input("digite seu nome:")
+def exibirmensagem(nome):
+    print(f"olá, {nome}")
 
-paciente ["nome"] = input ("Qual o seu nome:")
-paciente ["idade"] = int(input ("Quantos anos voce tem:"))
-paciente ["peso"] = float(input ("digite seu peso(kg):"))
-paciente ["altura"] = float(input ("digite seu altura(m):"))
+n1 = float(input("digite um número: "))
+n2 = float(input("digite outro número: "))
 
-imc = paciente ["peso"] / (paciente["altura"] ** 2)
+def calcular(n1,n2):
+    soma = n1 + n2
+    produto = n1 * n2
+    return soma, produto
+resultado_p , resultado = calcular(n1+n2)
 
-paciente ["imc"] = imc
-
-print("\n Dados")
-print("Nome:", paciente["nome"])
-print("idade:", paciente["idade"])
-print("peso:", paciente["peso"])
-print("altura:", paciente["altura"])
-print("imc:", round (paciente["altura"],2))
+print(f"soma: {resultado}")
+print(f"produto: {resultado_p}")

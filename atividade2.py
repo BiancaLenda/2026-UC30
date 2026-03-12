@@ -1,18 +1,14 @@
-aluno = {}
+nome = input("digite seu nome:")
+def exibirmensagem(nome):
+    print(f"olá, {nome}")
 
-aluno["nome"] = input("Qual o nome do aluno: ")
-aluno["nota1"] = float("Qual a nota 1 do aluno: ")
-aluno["nota2"] = float("Qual a nota 2 do aluno: ")
+vh = float(input("Quanto você ganha por hora: "))
+ht = float(input("Quantas horas você trabalha: "))
 
-media = (aluno["nota1"] + aluno["nota 2"]) / 2
+def calcularsalario(vh,nt):
+    salario = vh * ht
+    return salario
 
-if media >= 7:
-    print("passou")
-elif media >= 5:
-    print("média")
-else:
-    print("reprovou")
+resultado = calcularsalario(vh,ht)
 
-print("\n Dados")
-print("Nome: ", aluno["nome"])
-print("Média do ano", aluno["media"])
+print(f"Você recebe um total de: {resultado}")
