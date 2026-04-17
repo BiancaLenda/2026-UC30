@@ -1,0 +1,3 @@
+idades = ["3", "6", "9", "12", "15"]
+ordenadas = (idades)
+print(ordenadas)
